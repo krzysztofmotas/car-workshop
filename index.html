@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Warsztat samochodowy</title>
+
+    <link rel="stylesheet" href="fonts/Lato/stylesheet.css">
+    <link rel="stylesheet" href="stylesheets/main.css">
+
+    <script src="https://kit.fontawesome.com/abb4c83361.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <section id="header">
+        <nav class="header-nav">
+            <div class="company-logo">
+                Warsztat samochodowy
+            </div>
+
+            <input type="checkbox" id="hamburger-checkbox" name="hamburger-checkbox">
+            <label id="hamburger-label" for="hamburger-checkbox"></label>
+
+            <div class="header-menu">
+                <ul>
+                    <li>
+                        <a href="#header">
+                            <i class="fa-solid fa-car"></i>
+                            Strona główna
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#about-us">
+                            <i class="fa-solid fa-warehouse"></i>
+                            O nas
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#gallery">
+                            <i class="fa-solid fa-images"></i>
+                            Galeria zdjęć
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#team">
+                            <i class="fa-solid fa-people-group"></i>
+                            Nasz zespół
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#contact">
+                            <i class="fa-solid fa-phone-volume"></i>
+                            Kontakt
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <div class="welcome-text-box">
+            <h1>Najlepszy warsztat w Twojej okolicy</h1>
+            <p>
+                Witamy Cię w naszym profesjonalnym warsztacie samochodowym, gdzie pasja do motoryzacji łączy się z wieloletnim
+                doświadczeniem w naprawach pojazdów. Jesteśmy zespołem wykwalifikowanych mechaników, gotowych sprostać wszelkim
+                wyzwaniom związanym z Twoim samochodem.
+            </p>
+
+            <a class="contact-button" href="#contact">
+                Skontaktuj się z nami
+            </a>
+        </div>
+    </section>
+
+    <section id="about-us">
+        <h1>O nas</h1>
+        <p>
+            Jesteśmy zespołem pasjonatów motoryzacji, którzy od lat świadczą kompleksowe usługi z zakresu napraw, konserwacji i
+            obsługi technicznej pojazdów. Nasza firma powstała z myślą o dostarczaniu najwyższej jakości usług dla naszych klientów,
+            dbając jednocześnie o ich bezpieczeństwo i zadowolenie.
+        </p>
+
+        <div class="separator"></div>
+
+        <div class="about-us-boxes">
+            <div class="about-us-box">
+                <div class="about-us-icon">
+                    <i class="fa-solid fa-screwdriver-wrench"></i>
+                </div>
+                <h3>
+                    Doświadczenie i wiedza
+                </h3>
+
+                <p>
+                    Nasz zespół składa się z doświadczonych specjalistów, którzy posiadają nie tylko solidne wykształcenie, ale także szeroką
+                    wiedzę praktyczną.
+                </p>
+            </div>
+
+            <div class="about-us-box">
+                <div class="about-us-icon">
+                    <i class="fa-solid fa-gears"></i>
+                </div>
+                <h3>
+                    Nowoczesne technologie
+                </h3>
+                <p>
+                    Śledzimy najnowsze trendy w branży motoryzacyjnej i inwestujemy w nowoczesne technologie oraz sprzęt diagnostyczny.
+                </p>
+            </div>
+
+            <div class="about-us-box">
+                <div class="about-us-icon">
+                    <i class="fa-solid fa-handshake"></i>
+                </div>
+                <h3>
+                    Obsługa klienta
+                </h3>
+                <p>
+                    Dla nas każdy klient jest ważny. Stawiamy na indywidualne podejście, słuchamy potrzeb i doradzamy w sprawach związanych
+                    z konserwacją, naprawą czy koniecznymi wymianami części.
+                </p>
+            </div>
+
+            <div class="about-us-box">
+                <div class="about-us-icon">
+                    <i class="fa-solid fa-comments"></i>
+                </div>
+                <h3>
+                    Przejrzystość i komunikacja
+                </h3>
+                <p>
+                    W naszym warsztacie ceniemy sobie transparentność. Przed rozpoczęciem prac informujemy klientów o zakresie naprawy,
+                    szacunkowych kosztach oraz planie działań.
+                </p>
+            </div>
+        </div>
+    </section>
+    
+    <!--
+        TODO:
+        - boxy w sekcji na niektórych urządzeniach p nie jest w poziomie względem innych
+        - slider
+        - stopka
+    -->
+
+    <section id="gallery">
+        <div class="gallery-content">
+            <h1>Galeria zdjęć</h1>
+            <p>
+                Przejrzyj naszą galerię, aby zobaczyć unikalne projekty i efekty naszej pasji motoryzacyjnej.<br>
+                Każde zdjęcie to historia, która podkreśla nasze zaangażowanie, profesjonalizm i miłość do samochodów.
+            </p>
+
+            <div class="gallery-container">
+                <div class="image-box"><img src="images/gallery2.jpg"></div>
+                <div class="image-box"><img src="images/gallery3.jpg"></div>
+                <div class="image-box"><img src="images/gallery.jpg"></div>
+                <div class="image-box"><img src="images/gallery.jpg"></div>
+                <div class="image-box"><img src="images/gallery2.jpg"></div>
+                <div class="image-box"><img src="images/gallery3.jpg"></div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h1>
+            Kontakt
+        </h1>
+
+        <p>
+            Skorzystaj z sekcji kontaktowej, aby szybko i łatwo umówić wizytę lub uzyskać odpowiedzi na swoje pytania. Jesteśmy tu dla Ciebie!
+        </p>
+
+        <div class="separator"></div>
+
+        <div class="contact-boxes-flexbox">
+            <div class="contact-box">
+                <div class="left">
+                    <div class="icon-border">
+                        <i class="fa-solid fa-warehouse"></i>
+                    </div>
+                </div>
+
+                <div class="right">
+                    <h3>Nasza lokalizacja</h3>
+                    <span>al. Tadeusza Rejtana 16C</span>
+                    <span>35-310 Rzeszów</span>
+                </div>
+            </div>
+
+            <div class="contact-box">
+                <div class="left">
+                    <div class="icon-border">
+                        <i class="fa-solid fa-mobile"></i>
+                    </div>
+                </div>
+
+                <div class="right">
+                    <h3>Dane kontaktowe</h3>
+                    <span>info@ur.edu.pl</span>
+                    <span>+ 48 17 872 10 00</span>
+                </div>
+            </div>
+
+            <div class="contact-box">
+                <div class="left">
+                    <div class="icon-border">
+                        <i class="fa-regular fa-clock"></i>
+                    </div>
+                </div>
+
+                <div class="right">
+                    <h3>Godziny otwarcia</h3>
+                    <span>Od poniedziałku do piątku: 8:00 - 15:00</span>
+                    <span>Sobota: 8:00 - 12:00</span>
+                    <span>Niedziela: nieczynne</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="contact-flexbox">
+            <div class="map-box">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2014.755571469923!2d22.01383562388632!3d50.03031043262877!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x473cfaf83c5a9833%3A0x432f7dd9b86f7a01!2sUniwersytet+Rzeszowski!5e0!3m2!1spl!2spl!4v1499259529822"
+                    data-mce-fragment="1",
+                    class="contact-map"
+                    >
+                </iframe>
+            </div>
+            <div class="form-box">
+                <form>
+                    <input name="name" type="text" placeholder="Imię i nazwisko lub nazwa firmy" required>
+                    <input name="phone" type="tel" placeholder="Numer telefonu" required>
+                    <input name="email" type="email" placeholder="Adres e-mail" required>
+                    <input name="title" type="text" placeholder="Tytuł wiadomości" required>
+                    <textarea name="message" placeholder="Twoja wiadomość..." required></textarea>
+                    <button type="submit">Wyślij wiadomość</button>
+                </form>
+            </div>
+        </div>
+    </section>
+</body>
+
+<script src="script.js"></script>
+</html>
