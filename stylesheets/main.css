@@ -423,7 +423,6 @@ a {
 
 .contact-box .left i {
     font-size: 2rem;
-    color: var(--company-color);
 }
 
 .contact-box .right {
@@ -517,4 +516,10 @@ input,
 textarea,
 select {
     outline: none;
+}
+
+.fa-gradient {
+    background: linear-gradient(to bottom, #297bd3, rgb(2, 79, 137));
+    -webkit-background-clip: text;
+    color: transparent;
 }
