@@ -47,9 +47,9 @@ html {
     }
 }
 
-@media screen and (min-width: 1025px) {
+@media screen and (min-width: 1023px) {
     html {
-        font-size: 20px;   
+        font-size: 20px;     
     }
 }
 
@@ -70,7 +70,7 @@ a {
 /* https: //www.w3schools.com/howto/howto_css_parallax.asp */
 #header {
     position: relative;
-    min-height: 100vh;
+    min-height: 105vh;
     width: 100%;
     overflow: hidden;
     
@@ -153,10 +153,6 @@ a {
         position: fixed;
         width: 100%;
         z-index: 2;
-    }
-
-    .welcome-text-box {
-        margin-top: 5%;
     }
 
     .header-menu {
@@ -432,6 +428,7 @@ a {
 
 .contact-box .left .icon-border {
     border: 1px solid var(--gray);
+    box-shadow: 0 0 14px -5px rgba(0, 0, 0, 0.1);
     height: 90px;
     width: 90px;
     display: flex;
@@ -476,6 +473,7 @@ a {
     width: 100%;
     height: 100%;
     border: 1px solid var(--gray);
+    box-shadow: 2px 2px 30px rgba(0, 0, 0, 0.1);
 }
 
 .form-box form {
@@ -491,6 +489,7 @@ a {
     padding: 20px;
     border: 1px solid var(--gray);
     transition: border 0.25s ease;
+    box-shadow: 0 0 14px -5px rgba(0, 0, 0, 0.1);
 }
 
 .form-box form textarea {
@@ -514,6 +513,7 @@ a {
     font-weight: bold;
     cursor: pointer;
     transition: all 0.25s ease;
+    box-shadow: 0 0 14px -5px rgba(0, 0, 0, 0.5);
 }
 
 .form-box form button:hover {
@@ -754,6 +754,7 @@ select {
     border-radius: 50%;
     overflow: hidden;
     margin-right: 10px;
+    border: 1px solid var(--company-color);
 }
 
 .profile .profile-image img {
@@ -776,4 +777,54 @@ select {
     .profile .profile-name span {
         text-align: center;
     }
+}
+
+#footer {
+    height: 100px;
+    width: 100%;
+    background-size: cover;
+    background-image:
+        linear-gradient(to bottom, rgba(4, 4, 4, 0.72), rgba(31, 96, 164, 0.73)),
+        url(../images/background.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    box-shadow: 0px 0px 20px 10px rgba(0, 0, 0, 0.25);
+
+    display: flex;
+    align-items: center; 
+}
+
+#footer .company-logo {
+    margin: auto;
+}
+
+.social-media { 
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly;
+    gap: 1rem;
+}
+
+.social-media li {
+    width: 3rem;
+    height: 3rem;
+
+    transition: background-color 0.2s ease-in-out;
+    background-color: var(--company-color);
+    box-shadow: 0 0 14px -5px rgba(0, 0, 0, 0.5);
+}
+
+.social-media li:hover {
+    background-color: var(--darker-company-color);   
+}
+
+.social-media li a {
+    color: #fff;
+    width: 100%;
+    height: 100%;
+    font-size: 1.1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
