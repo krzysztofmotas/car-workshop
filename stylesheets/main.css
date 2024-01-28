@@ -1,11 +1,16 @@
 :root {
-    --company-color: rgb(31, 96, 164);
+    --company-color: rgb(31, 101, 177);
+    --darker-company-color: rgb(20, 86, 160);
     --light-gray: rgb(243, 243, 243);
     --gray: rgb(220, 220, 220);
 }
 
 .company-color {
     color: var(--company-color);
+}
+
+.darker-company-color {
+    color: var(--darker-company-color);
 }
 
 .white {
@@ -499,8 +504,7 @@ a {
 }
 
 .form-box form button:hover {
-    background-color: var(--light-gray);
-    color: var(--company-color);
+    background-color: var(--darker-company-color);
 }
 
 @media screen and (max-width: 1000px) {
@@ -519,7 +523,44 @@ select {
 }
 
 .fa-gradient {
-    background: linear-gradient(to bottom, #297bd3, rgb(2, 79, 137));
+    background: linear-gradient(to bottom, rgb(37, 116, 200), rgb(17, 77, 145));
     -webkit-background-clip: text;
     color: transparent;
+}
+
+.scroll-to-top {
+    position: fixed;
+    bottom: 1rem;
+    right: 1rem;
+    width: 60px;
+    height: 60px;
+
+    margin-bottom: -10rem;
+    transition: margin-bottom 0.2s;
+}
+
+.scroll-to-top a {
+    width: 100%;
+    height: 100%;
+
+    background-color: var(--company-color);
+    transition: background-color 0.2s ease-in-out;
+    box-shadow: 0 0 14px -5px rgba(0, 0, 0, 0.5);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.scroll-to-top a:hover {
+    background-color: var(--darker-company-color);
+}
+
+.scroll-to-top a i {
+    font-size: 1.1rem;
+    color: #fff;
+}
+
+.active {
+    margin-bottom: 0px;
 }
