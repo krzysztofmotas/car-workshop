@@ -75,11 +75,12 @@ a {
     padding: 3%;
 }
 
-.company-logo {
-    text-transform: uppercase;
-    font-size: 1.2rem;
-    font-weight: bold;
-    color: #fff;
+.company-logo img {
+    max-width: 50%;
+}
+
+.company-logo-black {
+    display: none;
 }
 
 .header-menu ul {
@@ -107,7 +108,7 @@ a {
 }
 
 .header-menu ul li a:hover {
-    color: rgb(168, 167, 167);
+    color: var(--company-color);
 }
 
 .header-menu ul li a i {
@@ -118,85 +119,71 @@ a {
     z-index: 3;
 }
 
-.sticky {
-    background-color: rgba(31, 96, 164, 0.7);
-    box-shadow: 0px 0px 20px 0px rgba(31, 96, 164, 0.5);
-    /* background-color: #fff; */
-    backdrop-filter: blur(2px);
-    top: 0;
-    position: fixed !important;
-    margin: 0 !important;
-    width: 100% !important;
-    height: 1%;
-    z-index: 3;
-    animation: slideDown 0.35s ease-out;
-    
-    /* & .company-logo {
-        color:
-    }
-
-    & .header-menu ul li a {
-        color: 
-    } */
-}
-
-.sticky-nocolor {
-    background-color: transparent;
-    box-shadow: none;
-}
-
-@keyframes slideDown {
-    from {
-        transform: translateY(-100%);
-    }
-
-    to {
-        transform: translateY(0);
-    }
-}
-
 @media screen and (max-width: 1000px) {
+    .company-logo-black {
+        display: block;
+    }
+
+    .company-logo-color {
+        display: none;
+    }
+
+    .company-logo img {
+        max-width: 60%;
+    }
+
+    .header-nav {
+        background-color: #fff;
+        position: fixed;
+        width: 100%;
+        z-index: 2;
+    }
+
+    .welcome-text-box {
+        margin-top: 5%;
+    }
+
     .header-menu {
         z-index: 2;
         display: none;
         position: absolute;
-        background-color: rgba(31, 96, 164, 0.5);
+        background-color: #fff;
         width: 100%;
         left: 0;
-        top: 0;
+        top: 100%;
         justify-content: center;
-        padding: 5% 0;
-        box-shadow: 0px 0px 20px 0px rgba(31, 96, 164, 0.5);
     }
 
     .header-menu ul {
-        padding-top: 10px;
         flex-direction: column;
+        padding-bottom: 5%;
+    }
+
+    .header-menu ul li:not(:last-child) {
+        border-bottom: 1px solid var(--light-gray);
     }
 
     .header-menu ul li a {
         flex-direction: row;
         column-gap: 10px;
-        font-size: 1.25em;
+        font-size: 1.1em;
+        color: gray;
     }
 
     #hamburger-label::after {
+        cursor: pointer;
         font: var(--fa-font-solid);
         content: "\f0c9";
-        color: #fff;
         font-size: 1.25rem;
     }
 
     #hamburger-checkbox:checked + #hamburger-label::after {
         content: "\f00d";
+        color: var(--company-color);
     }
 
     #hamburger-checkbox:checked ~ .header-menu {
         display: flex;
-    }
-
-    .sticky {
-        height: 7%;
     }
 }
 
