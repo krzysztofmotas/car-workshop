@@ -826,14 +826,20 @@ select {
     justify-content: center;
     flex-direction: column;
     text-align: center;
-    font-size: 0.9rem;
 }
 
-.footer-info > .project-title {
+.footer-info > h2 {
     color: #fff;
+    font-size: 1rem;
 }
 
 .footer-info > a {
     font-weight: bold;
     color: var(--gray);
+    font-size: 0.9rem;
+    transition: color 0.5s ease-in-out;
+}
+
+.footer-info > a:hover {
+    color: gray;
 }
