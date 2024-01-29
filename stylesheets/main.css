@@ -212,10 +212,10 @@ a {
     row-gap: 20px;
 }
 
-.welcome-text-box h1 {
+.section-title, .welcome-text-box h1 {
     font-size: 2rem;
-    color: #fff;
     font-weight: bold;
+    color: #fff;
 }
 
 .welcome-text-box p {
@@ -245,8 +245,7 @@ a {
     min-height: 0;
 }
 
-#about-us h1 {
-    font-size: 2rem;
+#about-us > .section-title {
     color: var(--company-color);
 }
 
@@ -279,7 +278,7 @@ a {
 }
 
 .about-us-box p {
-    color: gray; /* do zmiany */
+    color: gray;
     font-size: 0.8rem;
 }
 
@@ -319,10 +318,6 @@ a {
     color: #fff;
 }
 
-.gallery-content h1 {
-    font-size: 2rem;
-}
-
 .gallery-content > p {
     width: 75%;
     margin: auto;
@@ -338,7 +333,6 @@ a {
 }
 
 @media screen and (max-width: 450px) {
-    /* ~450px, bo trzeba doliczyć odstępy z obu stron */
     .gallery-container {
         grid-template-columns: repeat(auto-fit, 200px);
     }
@@ -371,11 +365,6 @@ a {
     padding-bottom: 5%;
 }
 
-#team h1 {
-    font-size: 2rem;
-    color: var(--company-color);
-}
-
 #contact {
     padding-top: 5%;
     position: relative;
@@ -385,8 +374,7 @@ a {
     padding-bottom: 5%;
 }
 
-#contact h1 {
-    font-size: 2rem;
+#contact > .section-title {
     color: var(--company-color);
 }
 
@@ -605,10 +593,6 @@ select {
     align-items: center;
 }
 
-.services-content h1 {
-    font-size: 2rem;
-}
-
 .services-content > p {
     width: 75%;
     margin: auto;
@@ -684,8 +668,7 @@ select {
     padding-bottom: 5%;
 }
 
-#clients h1 {
-    font-size: 2rem;
+#clients > .section-title {
     color: var(--company-color);
 }
 
@@ -697,11 +680,8 @@ select {
 .clients-container {
     display: flex;
     justify-content: center;
-    align-items: center;
     flex-wrap: wrap;
-    width: 100%;
     text-align: left;
-    align-items: stretch;
 }
 
 .client-box {
@@ -710,7 +690,7 @@ select {
     background-color: #fff;
     padding: 20px;
     margin: 15px;
-    transition: 0.6s;
+    transition: transform 0.6s;
 }
 
 .client-box:hover {
@@ -729,26 +709,27 @@ select {
     align-items: center;
 }
 
-.profile .profile-name {
+.profile-name {
     display: flex;
     flex-direction: column;
 }
 
-.profile .profile-name h2 {
+.profile-name h2 {
     color: var(--company-color);
     font-size: 1.0rem;
 }
 
-.profile .profile-name span {
+.profile-name span {
     color: gray;
     font-size: 0.8rem;
+    text-align: left;
 }
 
 .opinion {
     color: #ffdc18;
 }
 
-.profile .profile-image {
+.profile-image {
     width: 50px;
     height: 50px;
     border-radius: 50%;
@@ -757,29 +738,35 @@ select {
     border: 1px solid var(--company-color);
 }
 
-.profile .profile-image img {
+.profile-image img {
     width: 100%;
     height: 100%;
     object-fit: cover;
 }
 
-.client-box-bottom span {
+.client-box-message {
     font-size: 0.9rem;
-    text-align: left;
+}
+
+.message-date {
+    font-size: 0.8rem;
+    color: gray;
 }
 
 @media screen and (max-width: 500px) {
-    .client-box-top, .profile {
+    .client-box-top,
+    .profile {
         flex-direction: column;
+        align-items: center;
     }
 
-    .profile .profile-name span {
+    .profile-name span {
         text-align: center;
     }
 }
 
 #footer {
-    height: 100px;
+    min-height: 100px;
     width: 100%;
     background-size: cover;
     background-image:
@@ -790,14 +777,23 @@ select {
     background-repeat: no-repeat;
     box-shadow: 0px 0px 20px 10px rgba(0, 0, 0, 0.25);
 
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
     align-items: center;
+}
+
+@media screen and (max-width: 500px) {
+    #footer {
+        height: 120px;
+        grid-template-columns: 1fr;
+        justify-items: center;
+    }
 }
 
 .social-media {
     list-style: none;
     display: flex;
-    justify-content: space-evenly;
+    padding: 0;
     margin-left: 1rem;
     gap: 1rem;
 }
@@ -825,19 +821,19 @@ select {
     align-items: center;
 }
 
-.footer-center {
-
+.footer-info {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    font-size: 0.9rem;
 }
 
-.footer-center h2 {
+.footer-info > .project-title {
     color: #fff;
-    font-size: 1.15rem;
 }
 
-.footer-center h3 {
-    font-size: 1rem;
-}
-
-.footer-right {
-
+.footer-info > a {
+    font-weight: bold;
+    color: var(--gray);
 }
