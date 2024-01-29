@@ -794,11 +794,7 @@ select {
     align-items: center;
 }
 
-#footer .company-logo {
-    margin: auto;
-}
-
-.social-media { 
+.social-media {
     list-style: none;
     display: flex;
     justify-content: space-evenly;
@@ -829,5 +825,19 @@ select {
     align-items: center;
 }
 
-.footer-info {
+.footer-center {
+
+}
+
+.footer-center h2 {
+    color: #fff;
+    font-size: 1.15rem;
+}
+
+.footer-center h3 {
+    font-size: 1rem;
+}
+
+.footer-right {
+
 }
