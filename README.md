@@ -1,6 +1,6 @@
 # Warsztat samochodowy
 
-Projekt zaliczeniowy laboratorium przedmiotu **"Technologie Internetowe" Uniwersytetu Rzeszowskiego**  
+Projekt zaliczeniowy laboratorium przedmiotu **"Technologie Internetowe".**  
 Strona dostępna pod adresem: **https://krzysztofmotas.github.io/car-workshop**
 
 ## Opis projektu
